@@ -1,0 +1,53 @@
+<h1>Listing town_health_records</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Geography</th>
+      <th>Total pop 2005</th>
+      <th>Ages 0to19 2005</th>
+      <th>Over 65 2005</th>
+      <th>Income per capita 2000</th>
+      <th>Ppl below 200 percent poverty 2000</th>
+      <th>Percent ppl below 200 percent poverty 2000</th>
+      <th>Percent adequacy prenatal</th>
+      <th>Percent c section deliveries 2005 2008</th>
+      <th>Infant deaths 2005 2008</th>
+      <th>Infant mortality rate per 1000 births 2005 2008</th>
+      <th>Percent low birthweight 2005 2008</th>
+      <th>Percent publically financed prenatal 2005 2008</th>
+      <th>Percent teen births 2005 2008</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @town_health_records.each do |town_health_record| %>
+      <tr>
+        <td><%= town_health_record.geography %></td>
+        <td><%= town_health_record.total_pop_2005 %></td>
+        <td><%= town_health_record.ages_0to19_2005 %></td>
+        <td><%= town_health_record.over_65_2005 %></td>
+        <td><%= town_health_record.income_per_capita_2000 %></td>
+        <td><%= town_health_record.ppl_below_200_percent_poverty_2000 %></td>
+        <td><%= town_health_record.percent_ppl_below_200_percent_poverty_2000 %></td>
+        <td><%= town_health_record.percent_adequacy_prenatal %></td>
+        <td><%= town_health_record.percent_C_section_deliveries_2005_2008 %></td>
+        <td><%= town_health_record.infant_deaths_2005_2008 %></td>
+        <td><%= town_health_record.infant_mortality_rate_per_1000_births_2005_2008 %></td>
+        <td><%= town_health_record.percent_low_birthweight_2005_2008 %></td>
+        <td><%= town_health_record.percent_publically_financed_prenatal_2005_2008 %></td>
+        <td><%= town_health_record.percent_teen_births_2005_2008 %></td>
+        <td><%= link_to 'Show', town_health_record %></td>
+        <td><%= link_to 'Edit', edit_town_health_record_path(town_health_record) %></td>
+        <td><%= link_to 'Destroy', town_health_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Town health record', new_town_health_record_path %>

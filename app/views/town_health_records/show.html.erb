@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Geography:</strong>
+  <%= @town_health_record.geography %>
+</p>
+
+<p>
+  <strong>Total pop 2005:</strong>
+  <%= @town_health_record.total_pop_2005 %>
+</p>
+
+<p>
+  <strong>Ages 0to19 2005:</strong>
+  <%= @town_health_record.ages_0to19_2005 %>
+</p>
+
+<p>
+  <strong>Over 65 2005:</strong>
+  <%= @town_health_record.over_65_2005 %>
+</p>
+
+<p>
+  <strong>Income per capita 2000:</strong>
+  <%= @town_health_record.income_per_capita_2000 %>
+</p>
+
+<p>
+  <strong>Ppl below 200 percent poverty 2000:</strong>
+  <%= @town_health_record.ppl_below_200_percent_poverty_2000 %>
+</p>
+
+<p>
+  <strong>Percent ppl below 200 percent poverty 2000:</strong>
+  <%= @town_health_record.percent_ppl_below_200_percent_poverty_2000 %>
+</p>
+
+<p>
+  <strong>Percent adequacy prenatal:</strong>
+  <%= @town_health_record.percent_adequacy_prenatal %>
+</p>
+
+<p>
+  <strong>Percent c section deliveries 2005 2008:</strong>
+  <%= @town_health_record.percent_C_section_deliveries_2005_2008 %>
+</p>
+
+<p>
+  <strong>Infant deaths 2005 2008:</strong>
+  <%= @town_health_record.infant_deaths_2005_2008 %>
+</p>
+
+<p>
+  <strong>Infant mortality rate per 1000 births 2005 2008:</strong>
+  <%= @town_health_record.infant_mortality_rate_per_1000_births_2005_2008 %>
+</p>
+
+<p>
+  <strong>Percent low birthweight 2005 2008:</strong>
+  <%= @town_health_record.percent_low_birthweight_2005_2008 %>
+</p>
+
+<p>
+  <strong>Percent publically financed prenatal 2005 2008:</strong>
+  <%= @town_health_record.percent_publically_financed_prenatal_2005_2008 %>
+</p>
+
+<p>
+  <strong>Percent teen births 2005 2008:</strong>
+  <%= @town_health_record.percent_teen_births_2005_2008 %>
+</p>
+
+<%= link_to 'Edit', edit_town_health_record_path(@town_health_record) %> |
+<%= link_to 'Back', town_health_records_path %>
